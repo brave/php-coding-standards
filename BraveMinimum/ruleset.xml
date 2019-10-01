@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="BraveMinimum" namespace="BraveCS\BraveMinimum" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<description>Minimum coding standard for Brave.com plugins</description>
+
+	<rule ref="WordPressVIPMinimum">
+		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.get_page_by_title_get_page_by_title"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.get_posts_get_posts"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.switch_to_blog_switch_to_blog"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.term_exists_term_exists"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.user_meta_delete_user_meta"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.user_meta_get_user_meta"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.user_meta_update_user_meta"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.wpcom_vip_get_term_by_wpcom_vip_get_term_by"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.wpcom_vip_get_term_link_wpcom_vip_get_term_link"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.wp_remote_get_wp_remote_get"/>
+		<exclude name="WordPressVIPMinimum.Hooks.AlwaysReturnInFilter.MissingReturnStatement"/>
+		<exclude name="WordPressVIPMinimum.Hooks.PreGetPosts.PreGetPosts"/>
+		<exclude name="WordPressVIPMinimum.Performance.BatcacheWhitelistedParams.StrippedGetParam"/>
+		<exclude name="WordPressVIPMinimum.Performance.NoPaging.nopaging_nopaging"/>
+		<exclude name="WordPressVIPMinimum.Performance.RemoteRequestTimeout.timeout_timeout"/>
+		<exclude name="WordPressVIPMinimum.Performance.TaxonomyMetaInOptions.PossibleTermMetaInOptions"/>
+		<exclude name="WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn"/>
+		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__usermeta"/>
+		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UndefinedVariable"/>
+		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UnusedVariable"/>
+	</rule>
+
+	<rule ref="WordPress">
+		<exclude name="Generic.Classes.DuplicateClassName.Found"/>
+		<exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedIf"/>
+		<exclude name="Generic.Commenting"/>
+		<exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed"/>
+		<exclude name="Generic.Files.EndFileNewline.NotFound"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment.IncorrectWarning"/>
+		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
+		<exclude name="Generic.WhiteSpace"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeOpenBracket"/>
+		<exclude name="PSR2.Classes.PropertyDeclaration.Multiple"/>
+		<exclude name="PSR2.Methods.MethodDeclaration.StaticBeforeVisibility"/>
+		<exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
+		<exclude name="Squiz.Commenting"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceBeforeSemicolon"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"/>
+		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
+		<exclude name="Squiz.PHP.DisallowSizeFunctionsInLoops.Found"/>
+		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+		<exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+		<exclude name="Squiz.WhiteSpace"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
+                <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
+		<exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
+		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found"/>
+		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.FoundInTernaryCondition"/>
+		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition"/>
+		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_key"/>
+		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query"/>
+		<exclude name="WordPress.Files.FileName"/>
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
+		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+		<exclude name="WordPress.PHP.DiscouragedPHPFunctions.serialize_serialize" />
+		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
+		<exclude name="WordPress.PHP.StrictComparisons.LooseComparison" />
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda" />
+		<exclude name="WordPress.WhiteSpace" />
+		<exclude name="WordPress.WP.CapitalPDangit.Misspelled"/>
+		<exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedScript" />
+		<exclude name="WordPress.WP.EnqueuedResourceParameters.NotInFooter" />
+		<exclude name="WordPress.WP.PostsPerPage.posts_per_page_posts_per_page" />
+	</rule>
+
+</ruleset>
