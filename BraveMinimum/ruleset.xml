@@ -23,6 +23,7 @@
 		<exclude name="WordPressVIPMinimum.Performance.RemoteRequestTimeout.timeout_timeout"/>
 		<exclude name="WordPressVIPMinimum.Performance.TaxonomyMetaInOptions.PossibleTermMetaInOptions"/>
 		<exclude name="WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn"/>
+		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.cache_constraints___COOKIE"/>
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__usermeta"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UndefinedVariable"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UnusedVariable"/>
@@ -60,6 +61,10 @@
 		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
 		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
 		<exclude name="Squiz.PHP.DisallowSizeFunctionsInLoops.Found"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen"/>
 		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 		<exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
 		<exclude name="Squiz.WhiteSpace"/>
@@ -67,6 +72,7 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
                 <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
+		<exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
 		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma"/>
 		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
 		<exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
@@ -76,6 +82,7 @@
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_key"/>
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query"/>
 		<exclude name="WordPress.Files.FileName"/>
+		<exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid"/>
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
 		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
 		<exclude name="WordPress.PHP.DiscouragedPHPFunctions.serialize_serialize" />
