@@ -35,6 +35,7 @@
 		<exclude name="Generic.Commenting"/>
 		<exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed"/>
 		<exclude name="Generic.Files.EndFileNewline.NotFound"/>
+		<exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.IncorrectWarning"/>
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
 		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma"/>
