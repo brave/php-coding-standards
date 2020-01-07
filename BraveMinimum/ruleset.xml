@@ -6,6 +6,7 @@
 	<rule ref="WordPressVIPMinimum">
 		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant"/>
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.get_intermediate_image_sizes_get_intermediate_image_sizes"/>
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.get_page_by_title_get_page_by_title"/>
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.get_posts_get_posts"/>
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.switch_to_blog_switch_to_blog"/>
@@ -25,6 +26,7 @@
 		<exclude name="WordPressVIPMinimum.Performance.WPQueryParams.PostNotIn"/>
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.cache_constraints___COOKIE"/>
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__usermeta"/>
+		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__users"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UndefinedVariable"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UnusedVariable"/>
 	</rule>
@@ -40,9 +42,12 @@
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
 		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma"/>
 		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
+		<exclude name="Generic.NamingConventions.ConstructorName.OldStyle"/>
+		<exclude name="Generic.PHP.LowerCaseConstant.Found"/>
 		<exclude name="Generic.WhiteSpace"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent"/>
@@ -50,6 +55,9 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeOpenBracket"/>
 		<exclude name="PSR2.Classes.PropertyDeclaration.Multiple"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.BodyOnNextLineCASE"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonDEFAULT"/>
 		<exclude name="PSR2.Methods.MethodDeclaration.StaticBeforeVisibility"/>
 		<exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
 		<exclude name="Squiz.Commenting"/>
@@ -59,6 +67,7 @@
 		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceBeforeSemicolon"/>
 		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
 		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"/>
+		<exclude name="Squiz.Scope.MethodScope.Missing"/>
 		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
 		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
 		<exclude name="Squiz.PHP.DisallowSizeFunctionsInLoops.Found"/>
@@ -66,6 +75,7 @@
 		<exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen"/>
 		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
 		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen"/>
+		<exclude name="Squiz.PHP.EmbeddedPhp.NoSemicolon"/>
 		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 		<exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
 		<exclude name="Squiz.WhiteSpace"/>
@@ -73,6 +83,7 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
                 <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
+		<exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned"/>
 		<exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
 		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma"/>
 		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
@@ -85,6 +96,7 @@
 		<exclude name="WordPress.Files.FileName"/>
 		<exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid"/>
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
+		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
 		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
 		<exclude name="WordPress.PHP.DiscouragedPHPFunctions.serialize_serialize" />
 		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
@@ -94,6 +106,8 @@
 		<exclude name="WordPress.WP.CapitalPDangit.Misspelled"/>
 		<exclude name="WordPress.WP.EnqueuedResources.NonEnqueuedScript" />
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.NotInFooter" />
+		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
+		<exclude name="WordPress.WP.I18n.UnorderedPlaceholdersText"/>
 		<exclude name="WordPress.WP.PostsPerPage.posts_per_page_posts_per_page" />
 	</rule>
 
