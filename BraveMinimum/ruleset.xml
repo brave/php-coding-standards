@@ -29,6 +29,9 @@
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__users"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UndefinedVariable"/>
 		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UnusedVariable"/>
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.directory_mkdir" />
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.file_ops_file_put_contents" />
+		<exclude name="WordPressVIPMinimum.Hooks.RestrictedHooks.http_request_args" />
 	</rule>
 
 	<rule ref="WordPress">
@@ -45,6 +48,17 @@
 		<exclude name="Generic.NamingConventions.ConstructorName.OldStyle"/>
 		<exclude name="Generic.PHP.LowerCaseConstant.Found"/>
 		<exclude name="Generic.WhiteSpace"/>
+		<exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine" />
+		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
+		<exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch" />
+		<exclude name="Generic.Formatting.SpaceAfterCast.NoSpace" />
+		<exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine" />
+		<exclude name="Generic.PHP.NoSilencedErrors.Forbidden" />
+		<exclude name="Generic.CodeAnalysis.UselessOverridingMethod.Found" />
+		<exclude name="Generic.Files.OneObjectStructurePerFile.MultipleFound" />
+		<exclude name="Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase" />
+		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine" />
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine"/>
@@ -60,6 +74,7 @@
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonDEFAULT"/>
 		<exclude name="PSR2.Methods.MethodDeclaration.StaticBeforeVisibility"/>
 		<exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.TerminatingComment" />
 		<exclude name="Squiz.Commenting"/>
 		<exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
 		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
@@ -79,6 +94,11 @@
 		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 		<exclude name="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
 		<exclude name="Squiz.WhiteSpace"/>
+		<exclude name="Squiz.Operators.ValidLogicalOperators.NotAllowed" />
+		<exclude name="Squiz.PHP.EmbeddedPhp.SpacingAfterOpen" />
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure" />
+		<exclude name="Squiz.PHP.NonExecutableCode.ReturnNotRequired" />
+		<exclude name="Squiz.Classes.SelfMemberReference.NotUsed" />
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
                 <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
@@ -109,6 +129,24 @@
 		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
 		<exclude name="WordPress.WP.I18n.UnorderedPlaceholdersText"/>
 		<exclude name="WordPress.WP.PostsPerPage.posts_per_page_posts_per_page" />
+		<exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase" />
+		<exclude name="WordPress.WP.DeprecatedFunctions.get_allowed_themesFound" />
+		<exclude name="WordPress.WP.DeprecatedFunctions.get_current_themeFound" />
+		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_print_r" />
+		<exclude name="WordPress.WP.AlternativeFunctions.json_encode_json_encode" />
+		<exclude name="WordPress.DB.DirectDatabaseQuery.DirectQuery" />
+		<exclude name="WordPress.DB.DirectDatabaseQuery.NoCaching" />
+		<exclude name="WordPress.WP.AlternativeFunctions.parse_url_parse_url" />
+		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_var_export" />
+		<exclude name="WordPress.DateTime.RestrictedFunctions.date_date" />
+		<exclude name="WordPress.PHP.NoSilencedErrors.Discouraged" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray" />
+		<exclude name="WordPress.WP.AlternativeFunctions.file_system_read_fopen" />
+		<exclude name="WordPress.CodeAnalysis.EmptyStatement.SemicolonWithoutCodeDetected" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.SpaceAfterArrayOpener" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys" />
 	</rule>
 
 </ruleset>
