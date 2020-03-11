@@ -32,6 +32,7 @@
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.directory_mkdir" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.file_ops_file_put_contents" />
 		<exclude name="WordPressVIPMinimum.Hooks.RestrictedHooks.http_request_args" />
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.opcache_opcache_reset" />
 	</rule>
 
 	<rule ref="WordPress">
@@ -59,6 +60,9 @@
 		<exclude name="Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase" />
 		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine" />
 		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma" />
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceBeforeBrace" />
+		<exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.ContentAfterBrace" />
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine"/>
@@ -101,7 +105,7 @@
 		<exclude name="Squiz.Classes.SelfMemberReference.NotUsed" />
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceAfterArrayOpener"/>
-                <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
+        <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
 		<exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned"/>
 		<exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
@@ -147,6 +151,8 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine" />
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.SpaceAfterArrayOpener" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.SpaceAfterKeyword" />
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoSpaceAfterComma" />
 	</rule>
 
 </ruleset>
