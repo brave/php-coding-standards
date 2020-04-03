@@ -5,6 +5,7 @@
 
 	<rule ref="WordPressVIPMinimum">
 		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant" />
+		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingVariable" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.directory_mkdir" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.file_ops_file_put_contents" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules" />
@@ -36,6 +37,7 @@
 	</rule>
 
 	<rule ref="WordPress">
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
 		<exclude name="Generic.Classes.DuplicateClassName.Found" />
 		<exclude name="Generic.Classes.OpeningBraceSameLine.BraceOnNewLine" />
 		<exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch" />
@@ -62,6 +64,7 @@
 		<exclude name="Generic.PHP.NoSilencedErrors.Forbidden" />
 		<exclude name="Generic.Strings.UnnecessaryStringConcat.Found" />
 		<exclude name="Generic.WhiteSpace" />
+		<exclude name="PEAR.Files.IncludingFile.BracketsNotRequired" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.EmptyLine" />
@@ -125,6 +128,7 @@
 		<exclude name="WordPress.DB.DirectDatabaseQuery.DirectQuery" />
 		<exclude name="WordPress.DB.DirectDatabaseQuery.NoCaching" />
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_key" />
+		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_meta_value" />
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
 		<exclude name="WordPress.Files.FileName" />
 		<exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid" />
@@ -134,6 +138,7 @@
 		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_print_r" />
 		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_var_export" />
 		<exclude name="WordPress.PHP.DiscouragedPHPFunctions.serialize_serialize" />
+		<exclude name="WordPress.PHP.DontExtract.extract_extract" />
 		<exclude name="WordPress.PHP.NoSilencedErrors.Discouraged" />
 		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict" />
 		<exclude name="WordPress.PHP.StrictComparisons.LooseComparison" />
