@@ -6,12 +6,14 @@ PHP_CodeSniffer ruleset for Brave.com
 1. Install [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer).
 2. Clone the dependent coding standards:
 
+       git clone https://github.com/sirbrillig/phpcs-variable-analysis
        git clone https://github.com/Automattic/VIP-Coding-Standards
        git clone https://github.com/WordPress/WordPress-Coding-Standards
 3. Install the dependent coding standards, for example, by creating the
    appropriate symlinks in `/usr/share/php/PHP/CodeSniffer/src/Standards/`:
 
        cd /usr/share/php/PHP/CodeSniffer/src/Standards/
+       sudo ln -s /home/username/phpcs-variable-analysis/VariableAnalysis/ .
        sudo ln -s /home/username/VIP-Coding-Standards/WordPress-VIP-Go/ .
        sudo ln -s /home/username/devel/VIP-Coding-Standards/WordPressVIPMinimum/ .
        sudo ln -s /home/username/devel/WordPress-Coding-Standards/WordPress .

@@ -32,8 +32,11 @@
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.cache_constraints___COOKIE" />
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__usermeta" />
 		<exclude name="WordPressVIPMinimum.Variables.RestrictedVariables.user_meta__wpdb__users" />
-		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UndefinedVariable" />
-		<exclude name="WordPressVIPMinimum.Variables.VariableAnalysis.UnusedVariable" />
+	</rule>
+
+	<rule ref="VariableAnalysis">
+		<exclude name="VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable" />
+		<exclude name="VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable" />
 	</rule>
 
 	<rule ref="WordPress">
