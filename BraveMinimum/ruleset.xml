@@ -6,6 +6,7 @@
 	<rule ref="WordPressVIPMinimum">
 		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant" />
 		<exclude name="WordPressVIPMinimum.Files.IncludingFile.UsingVariable" />
+		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.cookies_setcookie" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.directory_mkdir" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.file_ops_file_put_contents" />
 		<exclude name="WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules" />
@@ -25,6 +26,7 @@
 		<exclude name="WordPressVIPMinimum.Hooks.PreGetPosts.PreGetPosts" />
 		<exclude name="WordPressVIPMinimum.Hooks.RestrictedHooks.http_request_args" />
 		<exclude name="WordPressVIPMinimum.Performance.BatcacheWhitelistedParams.StrippedGetParam" />
+		<exclude name="WordPressVIPMinimum.Performance.FetchingRemoteData.FileGetContentsUnknown" />
 		<exclude name="WordPressVIPMinimum.Performance.NoPaging.nopaging_nopaging" />
 		<exclude name="WordPressVIPMinimum.Performance.RemoteRequestTimeout.timeout_timeout" />
 		<exclude name="WordPressVIPMinimum.Performance.TaxonomyMetaInOptions.PossibleTermMetaInOptions" />
@@ -135,7 +137,9 @@
 		<exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query" />
 		<exclude name="WordPress.Files.FileName" />
 		<exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid" />
+		<exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid" />
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase" />
 		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase" />
 		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase" />
 		<exclude name="WordPress.PHP.DevelopmentFunctions.error_log_print_r" />
@@ -158,8 +162,11 @@
 		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
 		<exclude name="WordPress.WP.I18n.UnorderedPlaceholdersText" />
 		<exclude name="WordPress.WP.PostsPerPage.posts_per_page_posts_per_page" />
-		<exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid" />
-		<exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase" />
 	</rule>
 
+	<!-- Ignore minified CSS files since they can't be parsed properly. -->
+	<rule ref="Internal.Tokenizer.Exception">
+		<exclude-pattern>*\.css</exclude-pattern>
+	</rule>
+	<exclude-pattern>*\.min\.css</exclude-pattern>
 </ruleset>

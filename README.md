@@ -9,6 +9,10 @@ PHP_CodeSniffer ruleset for Brave.com
        git clone https://github.com/sirbrillig/phpcs-variable-analysis
        git clone https://github.com/Automattic/VIP-Coding-Standards
        git clone https://github.com/WordPress/WordPress-Coding-Standards
+2. Look for the latest release of the [WordPress](https://github.com/WordPress/WordPress-Coding-Standards/releases) and [VIP](https://github.com/Automattic/VIP-Coding-Standards/releases) coding standards and use it instead of the default branch:
+       cd WordPress-Coding-Standards ; git checkout 2.3.0
+       cd VIP-Coding-Standards ; git checkout 2.2.0
+
 3. Install the dependent coding standards, for example, by creating the
    appropriate symlinks in `/usr/share/php/PHP/CodeSniffer/src/Standards/`:
 
