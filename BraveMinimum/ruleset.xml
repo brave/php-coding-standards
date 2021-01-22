@@ -164,4 +164,9 @@
 		<exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase" />
 	</rule>
 
+	<!-- Ignore minified CSS files since they can't be parsed properly. -->
+	<rule ref="Internal.Tokenizer.Exception">
+		<exclude-pattern>*\.css</exclude-pattern>
+	</rule>
+	<exclude-pattern>*\.min\.css</exclude-pattern>
 </ruleset>
